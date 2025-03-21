@@ -6,8 +6,8 @@ import { Button } from "./ui/MovingBorders";
 const Experience = () => {
   return (
     <div className="py-20 w-full">
-      <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+      <h1 className="heading font-playfair">
+        My <span className="text-purple ">work experience</span>
       </h1>
 
       {/* <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10"> */}
@@ -38,13 +38,13 @@ const Experience = () => {
                 className="lg:w-32 md:w-20 w-16"
               />
               <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
+                <h1 className="text-start text-xl md:text-3xl font-karla ">
                   {card.company}
                 </h1>
-                <h3 className="text-start text-lg md:text-xl font-bold">
+                <h3 className="text-start text-lg md:text-2xl font-karla">
                   {card.position}
                 </h3>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                <p className="text-start text-white-100 mt-3 font-karla text-lg">
                   {card.desc}
                 </p>
               </div>

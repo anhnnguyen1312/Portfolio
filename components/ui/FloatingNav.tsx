@@ -16,7 +16,7 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    icon?: JSX.Element;
+   // icon?: JSX.Element;
   }[];
   className?: string;
 }) => {
@@ -27,7 +27,7 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
@@ -65,8 +65,8 @@ export const FloatingNav = ({
         // )}
       >
        
-        {navItems.map((navItem: any, idx: number) => (
-          <>
+        {navItems.map((navItem, idx: number) => (
+         
           
           <a key={`link=${idx}`}  
            href={navItem.link}
@@ -77,7 +77,7 @@ export const FloatingNav = ({
                  {/* <span className="block sm:hidden !cursor-pointer">{navItem.icon}</span> */}
                     <span className=" text-sm !cursor-pointer">{navItem.name}</span>
               </a>
-          </>
+         
         
           // <Link
           //   key={`link=${idx}`}

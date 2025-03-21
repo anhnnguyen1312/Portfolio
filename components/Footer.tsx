@@ -1,16 +1,26 @@
-import { FaLocationArrow } from "react-icons/fa6";
-
 import { socialMedia } from "@/data";
-import MagicButton from "@/components/ui/MargicButton";
 import Link from "next/link";
-
+import { Lamp } from "./ui/Lamp";
 const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
-     
-
-      <div className="flex flex-col items-center">
+     {/* <LampContainer>
+     <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+      >
+        Build lamps <br /> the right way
+      </motion.h1>
+     </LampContainer> */}
+     <Lamp/>
+      {/* <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-purple">
         
           Crafted with Code, Designed with Passion
@@ -25,9 +35,9 @@ const Footer = () => {
             position="right"
           />
         </a>
-      </div>
+      </div> */}
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-      <p className="md:text-base text-sm md:font-normal font-light">
+      <p className="md:text-base text-sm font-karla">
          Anh Nguyen
         </p>
 

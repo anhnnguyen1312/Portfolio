@@ -27,6 +27,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        karla: ['Karla', 'Arial', 'sans-serif'],
+        playfair: ['Playfair Display', 'Georgia', 'serif'],
+      },
       colors: {
         black: {
           DEFAULT: "#000",
