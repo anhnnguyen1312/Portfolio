@@ -16,15 +16,17 @@ export function Lamp() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl  tracking-tight text-transparent md:text-7xl"
+        className=" font-bold lg:text-2xl  md:text-xl text-lg text-center lg:max-w-[45vw] font-playfair mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text   tracking-tight text-transparent "
       >
+                  {/* Crafted with Code, Designed with Passion */}
+
         {/* <Experience/> */}
-         <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw] text-purple font-playfair">
+         <div className="flex flex-col items-center pt-[20px]">
+        <h1 className=" text-purple font-bold lg:text-2xl md:text-xl text-lg text-center lg:max-w-[45vw]  font-playfair">
         
           Crafted with Code, Designed with Passion
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center text-3xl font-karla">
+        <p className=" font-bold md:mt-10 my-5 text-center  lg:text-lg md:text-md text-sm font-playfair">
           Reach out to me today and Let&apos;s build something amazing together
         </p>
         <a href="mailto:anhnguyentl1312@gmail.com">
@@ -112,10 +114,12 @@ export const LampContainer = ({
           className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-cyan-400 "
         ></motion.div>
 
-        <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
+        <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 ">
+
+        </div>
       </div>
 
-      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+      <div className="relative z-50 flex lg:-translate-y-80 md:-translate-y-40 flex-col items-center px-5">
         {children}
       </div>
     </div>

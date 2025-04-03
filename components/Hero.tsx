@@ -20,11 +20,11 @@ const Hero = () => {
     </div>
     <div className='flex justify-center relative my-20 z-10 '>
 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-<h1 className='updercase tracking-widest text-lg text-center text-blue-100 max-w-80'>
+<h1 className='updercase tracking-widest lg:text-lg text-sm md:text-md text-center text-blue-100 max-w-80'>
   Anh Nguyen&rsquo;s portfolio
 </h1>
-<TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl font-playfair' words='Welcome to Anh Nguyen&apos;s portfolio'></TextGenerateEffect>
-<p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>Hi, I&apos;m Anh Nguyen, a FrontEnd Developer, based in Ho Chi Minh city!</p>
+<TextGenerateEffect className='text-center text-[40px] text-2xl md:text-3xl lg:text-4xl font-playfair' words='Welcome to Anh Nguyen&apos;s portfolio'></TextGenerateEffect>
+<p className='text-center md:tracking-wider mb-4 text-xs md:text-sm lg:text-md'>Hi, I&apos;m Anh Nguyen, a FrontEnd Developer, based in Ho Chi Minh city!</p>
 
 <a href='#projects'><MargicButton title="Show my Work" icon={<FaLocationArrow style={{color:'white'}}/>} position='right'></MargicButton></a>
 </div>

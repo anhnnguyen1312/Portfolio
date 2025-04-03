@@ -116,24 +116,24 @@ export const BentoGridItem = ({
         {id === 6 && (
           // add background animation , remove the p tag
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"/>
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white px-4 pointer-events-none text-xl text-center md:text-2xl lg:text-3xl"/>
           </BackgroundGradientAnimation>
           
         )}
 <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-[20px]"
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className=" font-extralight md:max-w-32 md:text-lg lg:text-xl text-md text-[#C1C2D3] z-10 font-karla">
+          <div className=" font-extralight md:max-w-32 md:text-md lg:text-lg text-sm text-[#C1C2D3] z-10 font-karla">
             {description}
           </div>
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={` text-lg lg:text-3xl max-w-96 z-10`}
+            className={` text-lg lg:text-xl max-w-96 z-10`}
           >
             {title}
           </div>
@@ -147,13 +147,13 @@ export const BentoGridItem = ({
                 {['React.Js','Next.Js','Typescript'].map((item, i) => (
                   <span
                     key={i}
-                    className="py-1 lg:py-2 lg:px-3  px-3 text-xs lg:text-base opacity-50 
+                    className=" lg:py-[4px] lg:px-[6px] py-[5px] px-[10px] text-xs lg:text-md opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-[20px] lg:px-3 py-[12px] px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-[20px] lg:px-[10px] py-[12px] px-[13px] h-[26px] w-[77.83px]  rounded-lg text-center bg-[#10132E]"></span>
               </div>
               <div className="flex flex-col gap-2 md:gap-2 lg:gap-6">
                 <span className="lg:py-[20px] lg:px-3 py-[12px] px-3  rounded-lg text-center bg-[#10132E]"></span>
